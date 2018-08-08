@@ -1,5 +1,5 @@
 const mobileBtn = document.querySelector('.js-mobile-menu');
-const mobileMenu = document.querySelector('.header__navigation-block');
+const mobileMenu = document.querySelector('.js-navigation');
 
 if (!!mobileBtn && !!mobileMenu) {
     let menuActive = true;
