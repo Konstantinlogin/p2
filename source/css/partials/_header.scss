@@ -53,18 +53,14 @@
     border: none;
     &:after {
         content: '';
-        //@supports (transform: rotate(-44deg)) {
-        //    display: block;
-        //    position: absolute;
-        //    z-index: 1;
-        //    top: 10px;
-        //    right: 18px;
-        //    width: 59px;
-        //    height: 44px;
-        //    border-radius: 50%;
-        //    box-shadow: 14px 14px 0 0 $BTC;
-        //    transform: rotate(-50deg);
-        //}
+        position: absolute;
+        bottom: -7px;
+        width: 15px;
+        height: 28px;
+        background: $BTC;
+        z-index: 1;
+        right: 20px;
+        border-radius: 0 0 15px 0;
     }
     &__content {
         position: relative;
@@ -85,4 +81,10 @@
         background-color: $BTC;
         border-radius: 28px;
     }
+}
+.first-slider {
+    height: 1626px;
+    width: 100%;
+    overflow: hidden;
+    background: grey;
 }
