@@ -1,7 +1,88 @@
+//1117 60
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        min-height: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 1177px + 20px;
+        margin-top: 56px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .nav-button {
     position: relative;
-    width: 56px;
-    height: 56px;
-    border-radius: 56px;
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    &__menu-btn {
+        position: relative;
+        box-sizing: border-box;
+        width: 52px;
+        height: 52px;
+        min-height: 52px;
+        min-width: 52px;
+        border-radius: 52px;
+        background-color: $BTC;
+    }
+    &__text {
+        @extend %text;
+        color: $PC;
+        font-weight: 500;
+        margin-left: 26px;
+        font-size: 18px;
+    }
+}
+.lk-button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    &:after {
+        content: '';
+        //@supports (transform: rotate(-44deg)) {
+        //    display: block;
+        //    position: absolute;
+        //    z-index: 1;
+        //    top: 10px;
+        //    right: 18px;
+        //    width: 59px;
+        //    height: 44px;
+        //    border-radius: 50%;
+        //    box-shadow: 14px 14px 0 0 $BTC;
+        //    transform: rotate(-50deg);
+        //}
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        @extend %text;
+        color: $PC;
+        font-size: 18px;
+        font-weight: 500;
+        box-sizing: border-box;
+        min-width: 189px;
+        padding-right: 8px;
+        padding-left: 8px;
+        white-space: nowrap;
+        height: 49px;
+        line-height: 49px;
+        text-align: center;
+        background-color: $BTC;
+        border-radius: 28px;
+    }
 }
