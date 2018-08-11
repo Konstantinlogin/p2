@@ -4,6 +4,21 @@
         max-width: 1920px;
         width: 100%;
         margin: 0 auto;
+        background: url('../images/1_bg_LG-min.png') no-repeat top;
+        background-size: 1920px;
+
+        @media screen and (max-width: #{$MD}) {
+            background: url('../images/1_bg_MD-min.png') no-repeat top;
+            background-size: $MD;
+        }
+
+        @media screen and (max-width: #{$XS}) {
+            background-size: $XS;
+        }
+
+        @media screen and (max-width: #{$XXS}) {
+            background-size: $XXS;
+        }
     }
     &__title {
         display: none;
@@ -12,29 +27,23 @@
 .first-slider {
     box-sizing: border-box;
     position: relative;
+    z-index: 3;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
-
     max-width: 1920px;
-    background-size: 1920px;
     height: 1060px;
-    background: url('../images/1_bg_LG.jpg') no-repeat top;
     
     @media screen and (max-width: #{$MD}) {
         max-width: $MD;
         height: 1132px;
-        background: url('../images/1_bg_MD.jpg') no-repeat top;
-        background-size: $MD;
     }
 
     @media screen and (max-width: #{$XS}) {
-        background-size: $XS;
         height: 701px;
     }
 
     @media screen and (max-width: #{$XXS}) {
-        background-size: $XXS;
         height: 401px;
     }
 
@@ -72,7 +81,7 @@
         }
     }
     &__arows {
-        // display: none;
+        display: none;
         position: absolute;
         top: 343px;
         width: 100%;
@@ -84,10 +93,22 @@
     }
 }
 .second-slider {
+    position: relative;
+    z-index: 2;
     overflow: hidden;
-    min-width: 1515px;
-    height: 1515px;
+    max-width: 1571px;
+    height: 456px;
     margin-left: auto;
     margin-right: auto;
-    background: url('../images/2_bg.jpg') no-repeat top;
+
+    @media screen and (max-width: #{$MD}) {
+        height: 492px;
+    }
+
+    @media screen and (max-width: #{$XS}) {
+        height: 304px;
+    }
+    @media screen and (max-width: #{$XXS}) {
+        height: 175px;
+    }
 }
