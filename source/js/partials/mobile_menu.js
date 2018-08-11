@@ -37,6 +37,7 @@ if (!!mobileBtn && !!mobileMenu) {
     }
     
     mobileBtn.onclick = function () {
+        console.log('123');
         if (menuActive) {
             showMenu();
         } else {

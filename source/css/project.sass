@@ -4,8 +4,13 @@
 @import partials/normalize
 @import partials/fonts
 @import partials/swiper
-@import partials/menu-btn
+
+@import partials/menu-btn-mobile
+@media screen and (min-width: #{$XS + 1})
+    @import partials/menu-btn-desktop
+
 @import partials/header
+@import partials/first-section
 
 
 
