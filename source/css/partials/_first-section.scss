@@ -102,6 +102,16 @@
         bottom: 75px;
         left: 50%;
         transform: translateX(-50%);
+        @media screen and (max-width: #{$SM}) {
+            bottom: 107px;
+        }
+        @media screen and (max-width: #{$XS}) {
+            bottom: 44px;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            width: 12px;
+            bottom: 48px;
+        }
     }
     @media screen and (max-width: #{$MD}) {
         max-width: 680px;
@@ -198,16 +208,17 @@
     &__pagination {
         position: absolute;
         top: calc(50% + 28px);
-        bottom: auto;        
+        bottom: auto;
+        height: 16px;    
         @media screen and (max-width: #{$XS}) {
             top: auto;
-            bottom: 52px!important;
+            bottom: 118px!important;
         }
         @media screen and (max-width: #{$XXS}) {
             top: auto;
             bottom: 84px!important;
         }
-        height: 16px;
+
         .swiper-pagination-bullet {
             width: 14px;
             height: 14px;
@@ -244,6 +255,13 @@
     height: 608px;
     position: relative;
     margin-top: 230px;
+    @media screen and (max-width: #{$MD}) {
+        margin-top: 120px;
+    }
+    @media screen and (max-width: #{$XS - 1px}) {
+        margin-top: 0;
+        height: 246px;
+    } 
     overflow: hidden;
     &__container {
         position: absolute;
@@ -252,6 +270,9 @@
         left: 50%;
         transform: translateX(-50%);
         height: 420px;
+        @media screen and (max-width: #{$XS - 1px}) {
+            height: 246px;
+        }
     }
     &__content {
         position: absolute;
@@ -259,6 +280,12 @@
         right: 526px;
         width: 912px;
         height: 415px;
+        @media screen and (max-width: #{$SM}) {
+            right: 457px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            height: 284px;
+        } 
     }
     &__top-text, &__right-text {
         color: $PC;
@@ -274,6 +301,14 @@
         z-index: 1;
         top: -8px;
         left: 4px;
+        @media screen and (max-width: 866px) {
+            left: 44px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 32px;
+            left: 272px;
+            top: 50px;
+        }
     }
     &__middle-text {
         font-size: 479.36px;
@@ -282,8 +317,19 @@
         letter-spacing: -24px;
         top: 7px;
         z-index: 2;
-        left: 132px;
+        left: 115px;
         bottom: 0;
+        @media screen and (max-width: #{$SM}) {
+            right: 267px;
+            left: auto;
+        } 
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 159px;
+            line-height: 150px;
+            right: 432px;
+            top: 89px;
+            letter-spacing: -12px;
+        } 
     }
     &__right-text {
         z-index: 3;
@@ -291,6 +337,19 @@
         top: 155px;
         font-size: 36.47px;
         line-height: 41.47px;
+        @media screen and (max-width: #{$SM}) {
+            right: 85px;
+        }
+        @media screen and (max-width: 866px) {
+            right: 140px;
+            font-size: 26.47px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 12px;
+            line-height: 18px;
+            right: 368px;
+            top: 126px;
+        } 
     }
 
     &__buildings {
@@ -304,6 +363,14 @@
         @media screen and (min-width: #{$LG + 1}) {
             background-size: 100%;
         }
+        @media screen and (max-width: #{$XS - 1px}) {
+            height: 113px;
+            background-size: #{$XS - 1px};
+        } 
+        @media screen and (max-width: 644px) {
+            background-size: 644px;
+        } 
+
     }
 }
 
@@ -316,5 +383,29 @@
     z-index: 1;
     @media screen and (min-width: #{$LG + 1}) {
         background-size: 100%;
+    }
+    @media screen and (max-width: #{$MD}) {
+        background-image: url('../images/bg_clouds_MD.jpg');
+        background-position: 0 1557px;
+        background-size: 1240px;
+    }
+    @media screen and (max-width: #{$SM}) {
+        background-image: url('../images/bg_clouds_MD.jpg');
+        background-position: -138px 1557px;
+    }
+
+    @media screen and (max-width: #{$XS}) {
+        background-position: 94px 1050px;
+        background-size: 100%;
+    }
+
+    @media screen and (max-width: #{$XS - 1px}) {
+        background-position: 0 1050px;
+        background-size: 100%;
+    }
+
+    @media screen and (max-width: 468px) {
+        background-position: -66px 548px;
+        background-size: 468px;
     }
 }
