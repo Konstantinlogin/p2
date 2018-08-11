@@ -95,6 +95,14 @@
 .second-slider-wrapper {
     position: relative;
     max-width: 768px;
+    text-align: center;
+    &__arr-dawn {
+        z-index: 3;
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     @media screen and (max-width: #{$MD}) {
         max-width: 680px;
     }
@@ -230,5 +238,83 @@
     }
     @media screen and (max-width: #{$XXS}) {
         height: 175px;
+    }
+}
+.more-then {
+    height: 608px;
+    position: relative;
+    margin-top: 230px;
+    overflow: hidden;
+    &__container {
+        position: absolute;
+        z-index: 1;
+        width: 1920px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 420px;
+    }
+    &__content {
+        position: absolute;
+        bottom: 0;
+        right: 526px;
+        width: 912px;
+        height: 415px;
+    }
+    &__top-text, &__right-text {
+        color: $PC;
+    }
+    &__top-text, &__middle-text, &__right-text {
+        @extend %text;
+        font-weight: 700;
+        position: absolute;
+    }
+    &__top-text {
+        font-size: 90.64px;
+        line-height: 90.64px;
+        z-index: 1;
+        top: -8px;
+        left: 4px;
+    }
+    &__middle-text {
+        font-size: 479.36px;
+        line-height: 479.36px;
+        color: $BTC;
+        letter-spacing: -24px;
+        top: 7px;
+        z-index: 2;
+        left: 132px;
+        bottom: 0;
+    }
+    &__right-text {
+        z-index: 3;
+        right: -27px;
+        top: 155px;
+        font-size: 36.47px;
+        line-height: 41.47px;
+    }
+
+    &__buildings {
+        width: 100%;
+        height: 329px;
+        background: url('../images/buildings.png') no-repeat center;
+        background-size: 1920px;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        @media screen and (min-width: #{$LG + 1}) {
+            background-size: 100%;
+        }
+    }
+}
+
+.main-wrapper {
+    background-image: url('../images/bg_clouds.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 1052px;
+    background-size: 1920px;
+    width: 100%;
+    z-index: 1;
+    @media screen and (min-width: #{$LG + 1}) {
+        background-size: 100%;
     }
 }
