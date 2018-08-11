@@ -92,14 +92,134 @@
         z-index: 1;
     }
 }
+.second-slider-wrapper {
+    position: relative;
+    max-width: 768px;
+    @media screen and (max-width: #{$MD}) {
+        max-width: 680px;
+    }
+    @media screen and (max-width: #{$XXS}) {
+        max-width: 280px;
+        top: 18px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    &__top-quote { 
+        position: absolute;
+        top: 105px;
+        left: 0;
+        @media screen and (max-width: #{$XS}) {
+            top: 65px;
+            left: 10px;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            top: 30px;
+            width: 17px;
+            height: 17px;
+        }
+    }
+    &__bottom-quote {
+        position: absolute;
+        right: 0;
+        top: 197px;
+        @media screen and (max-width: #{$XS}) {
+            top: 120px;
+            right: 10px;
+            width: 72px;
+            height: 72px;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            top: 59px;
+            width: 37px;
+            height: 37px;
+        }
+    }
+}
 .second-slider {
     position: relative;
+    box-sizing: border-box;
+    padding-top: 54px;
+    @media screen and (max-width: #{$XS}) {
+        padding-top: 24px;
+    }
+    @media screen and (max-width: #{$XXS}) {
+        padding-top: 14px;
+    }
     z-index: 2;
     overflow: hidden;
-    max-width: 1571px;
+    max-width: 768px;
     height: 456px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    &__content {
+        
+    }
+    &__text, &__title {
+        @extend %text;
+        font-weight: 300;
+        color: white;
+    }
+    &__title {
+        font-size: 50px;
+        margin-bottom: 40px;
+        @media screen and (max-width: #{$XS}) {
+            font-size: 28px;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+    &__text {
+        line-height: 1.2;
+        font-size: 24px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: #{$XS}) {
+            font-size: 18px;
+            max-width: 300px;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            font-size: 10px;
+            max-width: 168px;
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        top: calc(50% + 28px);
+        bottom: auto;        
+        @media screen and (max-width: #{$XS}) {
+            top: auto;
+            bottom: 52px!important;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            top: auto;
+            bottom: 84px!important;
+        }
+        height: 16px;
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            @media screen and (max-width: #{$XXS}) {
+                width: 8px;
+                height: 8px;
+            }
+            box-sizing: border-box;
+            background: white;
+            border: 2px solid $BTC;
+            opacity: 0.6;
+            margin: 0 10px!important;
+            @media screen and (max-width: #{$XXS}) {
+                margin: 0 4px!important;
+            }
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
 
     @media screen and (max-width: #{$MD}) {
         height: 492px;
