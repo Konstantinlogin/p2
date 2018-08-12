@@ -1,5 +1,11 @@
 .section-clients {
-    padding-top: 188px; 
+    padding-top: 179px;
+    @media screen and (max-width: #{$MD}) {
+        padding-top: 110px;
+    }
+    @media screen and (max-width: #{$XS - 1px}) {
+        padding-top: 32px;  
+    }
     &__title {
         @extend %text;
         font-weight: 700;
@@ -7,7 +13,16 @@
         text-align: center;
         margin: 0;
         padding: 0;
-        margin-bottom: 104px;
+        margin-bottom: 93px;
+        text-transform: uppercase;
+        @media screen and (max-width: #{$MD}) {
+            font-size: 50px;
+            margin-bottom: 56px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 18px;
+            margin-bottom: 34px;
+        }
     }
     &__text-black {
         color: $PC;
@@ -16,15 +31,149 @@
         color: $BTC;
     }
     &__container {
-        max-width: 1191px;
+        max-width: 1440px;
         margin: 0 auto;
         box-sizing: border-box;
+        @media screen and (max-width: #{$MD}) {
+            max-width: 720px;
+        }
+
     }
     &__clients-slider {
 
+    }
+    &__slider-pagination-wrapper {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        @media screen and (min-width: #{$XS}) {
+            display: none;
+        }
+    }
+    &__slider-pagination {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            box-sizing: border-box;
+            background: white;
+            border: 2px solid $BTC;
+            opacity: 0.6;
+            margin: 0 4px!important;
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
     }
 }
 .clients-slider {
     overflow: hidden;
     position: relative;
+    &__slide {
+        text-align: center;
+    }
+    &__icon-block {
+        text-align: center;
+        background: url('../images/blue_overlay.svg') no-repeat left;
+        background-size: 148px; 
+        width: 153px;
+        height: 166px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 52px;
+        @media screen and (max-width: #{$MD}) {
+            width: 101px;
+            height: 101px;        
+            background-size: 90px; 
+            margin-bottom: 24px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            width: 56px;
+            height: 65px;
+            background-size: 56px;
+            margin-bottom: 24px;
+        }
+    }
+    &__icon {
+        position: relative;
+
+        &--fly {
+            right: -18px;
+            top: 6px;
+            @media screen and (max-width: #{$MD}) {
+                width: 87px;
+                right: -18px;
+                top: -18px;
+            }
+            @media screen and (max-width: #{$XS - 1px}) { 
+                width: 52px;
+                height: 84px;
+            }
+        }
+        &--hammer {
+            width: 135px;
+            height: 135px;
+            transform: rotate(45deg);
+            right: -27px;
+            top: -7px;
+            @media screen and (max-width: #{$MD}) {
+                width: 84px;
+                height: 84px;
+                background-position: 20px;
+            }
+            @media screen and (max-width: #{$XS - 1px}) { 
+                width: 52px;
+                height: 52px;
+                right: -10px;
+            }
+        }
+        &--sofa {
+            right: -16px;
+            top: -4px;
+            @media screen and (max-width: #{$MD}) {
+                width: 78px;
+                height: 95px;
+                right: -24px;
+                top: -14px;
+            }
+            @media screen and (max-width: #{$XS - 1px}) { 
+                width: 52px;
+                height: 84px;
+                top: -19px;
+                right: -14px;
+            }
+        }
+    }
+    &__title, &__text {
+        @extend %text;
+        font-weight: 500;
+        color: $PC;
+    }
+    &__title {
+        font-size: 37px;
+        margin-bottom: 24px;
+        @media screen and (max-width: #{$MD}) {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) { 
+            font-size: 18px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 1.5;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+        @media screen and (max-width: #{$MD}) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            max-width: 247px;
+        }
+    }
 }

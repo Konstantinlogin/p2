@@ -16,9 +16,15 @@ let secondSlider = new Swiper('.second-slider', {
 
 let clientsSlider = new Swiper('.clients-slider', {
   pagination: {
-    el: '.clients-slider__pagination',
+    el: '.section-clients__slider-pagination',
     clickable: true
   },
-  slidesPerView: 3
+  slidesPerView: 3,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+
+    },
+  }
 });
 
