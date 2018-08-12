@@ -1,0 +1,176 @@
+.section-why {
+    margin-top: 144px;
+    position: relative;
+    z-index: 1;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../images/blue_ovarlay_bg.jpg') no-repeat top;
+    background-size: 1920px;
+    @media screen and (max-width: #{$MD}) {
+        background-size: 1420px;
+    }
+    @media screen and (max-width: #{$XS - 1px}) {
+        background-size: cover;
+        margin-top: 24px;
+    }
+    &__container {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+
+    }
+    &__title {
+        @extend %text;
+        font-weight: 700;
+        font-size: 100px;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        color: white;
+        min-height: 115px;
+        padding-top: 160px;
+        padding-bottom: 37px;
+        @media screen and (max-width: #{$MD}) {
+            padding-top: 115px;
+            padding-bottom: 18px;
+            font-weight: 500;
+            font-size: 80px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 30px;
+            padding-top: 42px;
+            padding-bottom: 21px;
+            min-height: auto;
+        }
+    }
+}
+.comics {
+    position: relative;
+    width: 100%;
+    &__container {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: #{$MD}) {
+            max-width: 768px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            max-width: 400px;
+        }
+    }
+    &__section {
+        display: flex;
+        margin-bottom: 86px;
+        &--double {
+            margin-bottom: 48px;
+        }
+        @media screen and (max-width: #{$MD}) {
+            margin-bottom: 69px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            align-items: center;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+    }
+    &__item {
+        position: relative;
+        @extend %text;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 25px;
+        background: white;
+        box-sizing: border-box;
+        padding-left: 86px;
+        padding-right: 72px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+        border-radius: 16px;
+        @media screen and (max-width: #{$MD }) {
+            padding: 20px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 12px;
+            padding: 9px!important;
+            border-radius: 8px;
+            text-align: center;
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: calc(100% - 3px);
+            left: 52px;
+            width: 0;
+            height: 0;
+            border-top: 40px solid white;
+            border-right: 40px solid transparent;
+            @media screen and (max-width: #{$XS - 1px}) {
+                border-top: 15px solid white;
+                border-right: 15px solid transparent;
+                left: 15px;
+            }
+        }
+        &--sm {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 25px;
+        }
+        &--530 {
+            width: 530px;
+            margin-left: 104px;
+            @media screen and (max-width: #{$XS - 1px}) {
+                margin-left: 0;
+                width: 100%;
+                max-width: 160px;
+            }
+        }
+        &--428 {
+            &:last-child {
+                margin-right: 0;
+            }
+            margin-right: 8px!important;
+            width: 50%;
+            max-width: 132px;
+            @media screen and (min-width: #{$XS - 1px}) { 
+                margin-right: 70px!important;
+                width: 428px;
+                max-width: 100%;
+            }
+        }
+    }
+    &__black-bird {
+        position: relative;
+        right: 98px;
+        margin-bottom: -120px;
+        background: url('../images/pers_fleepy.svg') no-repeat center;
+        display: inline-block;
+        width: 243px;
+        height: 316px;
+        background-size: contain;
+        text-decoration: none; 
+        @media screen and (max-width: #{$MD }) {
+            width: 216px;
+            height: 270px;
+            margin-top: -32px;
+            margin-bottom: -65px;
+        }
+        @media screen and (max-width: #{$SM}) {
+            right: 33px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            right: 33px;
+            width: 63px;
+            height: 92px;
+            margin-top: 0;
+            margin-bottom: -16px;
+            right: 21px;
+        }
+    }
+}

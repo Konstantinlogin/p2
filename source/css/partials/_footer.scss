@@ -1,0 +1,12 @@
+.footer {
+    min-height: 152px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: grey;
+    @media screen and (max-width: #{$MD}) {
+        min-height: 61px;
+    }
+    &__container {
+        display: flex;
+    }
+}
