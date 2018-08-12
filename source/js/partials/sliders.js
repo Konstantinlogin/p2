@@ -23,8 +23,21 @@ let clientsSlider = new Swiper('.clients-slider', {
   breakpoints: {
     767: {
       slidesPerView: 1,
-
-    },
+    }
   }
 });
+
+let worksSlider = new Swiper('.works-slider', {
+  pagination: {
+    el: '.section-how-it-works__pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.works-slider-wrapper__next',
+    prevEl: '.works-slider-wrapper__prev',
+  },
+});
+
+
+
 

@@ -1,0 +1,212 @@
+.section-how-it-works {
+    &__title {
+        @extend %text;
+        font-size: 64px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 113px;
+        margin-top: 181px;
+        @media screen and (max-width: #{$MD}) {
+            margin-bottom: 56px;
+            margin-top: 110px;
+            font-size: 48px;
+        }
+        @media screen and (max-width: #{$SM}) {
+            font-size: 48px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 18px;
+            margin-bottom: 28px;
+            margin-top: 32px;
+        }
+    }
+    // 1133
+    &__container {
+        max-width: 1133px + 30px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+
+    }
+    &__pagination {
+        &-wrapper {
+            height: 20px;
+            margin-top: 85px;
+            @media screen and (max-width: #{$SM - 1px}) {
+                margin-top: 40px; 
+            }
+            @media screen and (max-width: #{$XXS}) {
+                margin-top: 0; 
+            }
+        }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            @media screen and (max-width: #{$XXS}) {
+                width: 8px;
+                height: 8px;
+            }
+            box-sizing: border-box;
+            background: white;
+            border: 2px solid $BTC;
+            opacity: 0.6;
+            margin: 0 10px!important;
+            @media screen and (max-width: #{$XXS}) {
+                margin: 0 4px!important;
+            }
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
+}
+.works-slider-wrapper {
+    position: relative;
+    &__arrows {
+
+    }
+    &__prev, &__next {
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__next {
+        position: absolute;
+        right: 0;
+        @media screen and (max-width: #{$MD - 1px}) {
+            transform: translateY(-50%) scale(0.7);
+        }
+        @media screen and (max-width: #{$XXS}) {
+            transform: translateY(-50%) scale(0.4);
+        }
+        @media screen and (max-width: #{$XXS}) { 
+           right: -12px;
+        }
+    }
+    &__prev {
+        position: absolute;
+        left: 0;
+        @media screen and (max-width: #{$MD - 1px}) {
+            transform: translateY(-50%) scale(0.7);
+        }
+        @media screen and (max-width: #{$XXS}) {
+            transform: translateY(-50%) scale(0.4);
+        }
+        @media screen and (max-width: #{$XXS}) { 
+            left: -12px;
+         }
+    }
+}
+.works-slider {
+    overflow: hidden;
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    &__slide {
+        
+    }
+    &__slide-content {
+        position: relative;
+        min-height: 245px;
+        line-height: 1.5;
+        box-sizing: border-box;
+        padding-left: 65px + 236px;
+        padding-right: 20px;
+        @media screen and (max-width: #{$MD - 1px}) {
+            padding-left: 215px;
+            padding-right: 40px;
+            min-height: 206px;
+            max-width: calc(100% - 40px);
+            @media screen and (max-width: #{$XXS}) { 
+                max-width: 100%;
+            }
+            margin: 0 auto;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            padding-left: 192px;
+            min-height: 132px;
+            transform: translateY(-59px);
+        }
+        @media screen and (max-width: #{$XXS}) {
+            padding-left: 80px;
+            padding-right: 0;
+            min-height: 106px;
+            transform: translateY(-59px);
+        }
+    }
+    &__icon-block {
+        text-align: left;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 236px;
+        height: 255px;
+        @media screen and (max-width: #{$MD - 1px}) {
+            transform: scale(0.7);
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            transform: scale(0.5);
+        }
+        @media screen and (max-width: #{$XXS}) {
+            transform: scale(0.2) translate(-366px, -83px);
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: auto;
+        right: 0;
+        z-index: 2;
+        &--calculator {
+            width: 138px;
+            height: 204px;
+            bottom: 20px;
+        }
+        &--contact, &--loop, &--wallet {
+            width: 138px;
+            height: 138px;
+            bottom: 30px;
+        }
+        &--wallet {
+            right: -13px;
+        }
+    }
+    &__text {
+        @extend %text;
+        font-weight: 700;
+        font-size: 40px;
+        display: inline-block;
+        line-height: 1.2;
+        position: relative;
+        top: 80px;
+        @media screen and (max-width: #{$MD - 1px}) {
+            font-size: 28px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 20px;
+            top: 97px;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            font-size: 12px;
+        }
+    }
+    &__num {
+        @extend %text;
+        color: $BTC;
+        font-size: 329px;
+        line-height: 260px;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+    }
+}
