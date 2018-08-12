@@ -1,0 +1,30 @@
+.section-clients {
+    padding-top: 188px; 
+    &__title {
+        @extend %text;
+        font-weight: 700;
+        font-size: 64px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 104px;
+    }
+    &__text-black {
+        color: $PC;
+    }
+    &__text-blue {
+        color: $BTC;
+    }
+    &__container {
+        max-width: 1191px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    &__clients-slider {
+
+    }
+}
+.clients-slider {
+    overflow: hidden;
+    position: relative;
+}

@@ -14,3 +14,11 @@ let secondSlider = new Swiper('.second-slider', {
   }
 });
 
+let clientsSlider = new Swiper('.clients-slider', {
+  pagination: {
+    el: '.clients-slider__pagination',
+    clickable: true
+  },
+  slidesPerView: 3
+});
+
