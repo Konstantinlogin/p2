@@ -92,3 +92,37 @@
     background-size: contain;
     text-decoration: none;  
 }
+// 36 36
+.ic-fb {
+    display: inline-block;
+    background-image: url('../images/ic_social_media.png');
+    width: 36px;
+    height: 36px;
+    background-size: 36px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1px 0px;
+}
+.ic-insta {
+    display: inline-block;
+    background-image: url('../images/ic_social_media.png');
+    width: 36px;
+    height: 36px;
+    background-size: 36px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -60px 0px;
+}
+.ic-vk {
+    display: inline-block;
+    background-image: url('../images/ic_social_media.png');
+    width: 36px;
+    height: 36px;
+    background-size: 36px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -118px 0px;
+}

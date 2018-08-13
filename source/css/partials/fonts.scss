@@ -83,3 +83,11 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'PFCOM';
+    src: url($FONT_PATH + 'PFDinTextCompPro-Regular.woff2') format('woff2'),
+        url($FONT_PATH + 'PFDinTextCompPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

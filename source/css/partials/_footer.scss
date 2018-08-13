@@ -1,12 +1,79 @@
 .footer {
-    min-height: 152px;
     box-sizing: border-box;
     padding: 10px;
-    background: grey;
-    @media screen and (max-width: #{$MD}) {
-        min-height: 61px;
+    font-family: 'PFCOM', sans-serif;
+    &__item {
+        font-size: 0;
+        @media screen and (max-width: #{$SM - 1px}) { 
+            margin-bottom: 18px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @supports (flex-direction: column-reverse) {
+                &:last-child {
+                    margin-bottom: 18px;
+                }
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
+  
+        }
+    }
+    &__icon {
+        margin-right: 14px;
+        @media screen and (min-width: #{$XS}) { 
+            margin-right: 22px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        @media screen and (max-width: #{$XS - 1px}) { 
+            transform: scale(0.5);
+            margin-top: -7px;
+            margin-bottom: -7px;
+            margin-right: 0;
+        }
     }
     &__container {
-        display: flex;
+        min-height: 152px;
+        box-sizing: border-box;
+        @media screen and (max-width: #{$MD}) {
+            min-height: 61px;
+        }
+        @media screen and (max-width: #{$SM - 1px}) { 
+            min-height: 0;
+        }
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        @supports (flex-direction: column-reverse) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        @media screen and (min-width: #{$SM}) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 780px;
+            justify-content: space-between;
+            text-align: left;
+            padding-left: 180px;
+        }
+    }
+    &__text, &__link {
+        font-size: 12px;
+        line-height: 1.2;
+        @media screen and (min-width: #{$XS}) { 
+            font-size: 24px;
+        }
+        color: $PC;
+    }
+    &__link {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
