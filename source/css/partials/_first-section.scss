@@ -152,6 +152,60 @@
             height: 37px;
         }
     }
+    &__pagination {
+        position: static;
+        &-wrapper {
+            position: relative;
+            height: 18px;
+            margin-top: 52px;
+            @media screen and (max-width: #{$XXS}) {
+                margin-top: 10px;
+            }
+        }
+        height: 16px; 
+        @media screen and (max-width: #{$XS}) {
+            top: auto;
+            bottom: 118px!important;
+        }
+        @media screen and (max-width: #{$XXS}) {
+            top: auto;
+            bottom: 84px!important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            @media screen and (max-width: #{$XXS}) {
+                width: 8px;
+                height: 8px;
+            }
+            box-sizing: border-box;
+            background: white;
+            border: 2px solid $BTC;
+            opacity: 0.6;
+            margin: 0 10px!important;
+            @media screen and (max-width: #{$XXS}) {
+                margin: 0 4px!important;
+            }
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
+    height: 456px;
+    @media screen and (max-width: #{$MD}) {
+        height: 492px;
+    }
+    @media screen and (max-width: #{$XS}) {
+        height: 304px;
+    }
+    @media screen and (max-width: #{$XXS}) {
+        height: 175px;
+    }
+    &__pagination-wrapper {
+        position: relative;
+
+    }
 }
 .second-slider {
     position: relative;
@@ -166,7 +220,7 @@
     z-index: 2;
     overflow: hidden;
     max-width: 768px;
-    height: 456px;
+
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -203,52 +257,6 @@
             font-size: 10px;
             max-width: 168px;
         }
-    }
-
-    &__pagination {
-        position: absolute;
-        top: calc(50% + 28px);
-        bottom: auto;
-        height: 16px;    
-        @media screen and (max-width: #{$XS}) {
-            top: auto;
-            bottom: 118px!important;
-        }
-        @media screen and (max-width: #{$XXS}) {
-            top: auto;
-            bottom: 84px!important;
-        }
-
-        .swiper-pagination-bullet {
-            width: 14px;
-            height: 14px;
-            @media screen and (max-width: #{$XXS}) {
-                width: 8px;
-                height: 8px;
-            }
-            box-sizing: border-box;
-            background: white;
-            border: 2px solid $BTC;
-            opacity: 0.6;
-            margin: 0 10px!important;
-            @media screen and (max-width: #{$XXS}) {
-                margin: 0 4px!important;
-            }
-            &.swiper-pagination-bullet-active {
-                opacity: 1;
-            }
-        }
-    }
-
-    @media screen and (max-width: #{$MD}) {
-        height: 492px;
-    }
-
-    @media screen and (max-width: #{$XS}) {
-        height: 304px;
-    }
-    @media screen and (max-width: #{$XXS}) {
-        height: 175px;
     }
 }
 .more-then {

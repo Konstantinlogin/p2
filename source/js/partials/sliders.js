@@ -9,7 +9,7 @@ let firstSlider = new Swiper('.first-slider', {
 
 let secondSlider = new Swiper('.second-slider', {
   pagination: {
-    el: '.second-slider__pagination',
+    el: '.second-slider-wrapper__pagination',
     clickable: true
   }
 });
