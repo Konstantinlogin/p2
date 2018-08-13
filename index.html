@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/project.css" />
 </head>
-
 <body>
     <div class="main-wrapper">
         <header class="header">
@@ -34,7 +33,22 @@
                 </a>
             </div>
         </header>
-        <nav class="js-navigation"></nav>
+        <nav class="js-navigation navigation-block">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Ссылка 1</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Ссылка 2</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Ссылка 3</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Ссылка 4</a>
+                </li>
+            </ul>
+        </nav>
         <section class="first-section">
             <h1 class="first-section__title">Fleeppy</h1>
             <div class="first-section__container">
@@ -80,11 +94,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="second-slider__pagination swiper-pagination"></div>
+                    </div>
+                    <div class="second-slider-wrapper__pagination-wrapper">
+                        <div class="second-slider-wrapper__pagination swiper-pagination"></div>
                     </div>
                     <i class="ic-top-quote second-slider-wrapper__top-quote"></i>
                     <i class="ic-bottom-quote second-slider-wrapper__bottom-quote"></i>
-                    <a href="#moreThen" class="ic-arr-dawn second-slider-wrapper__arr-dawn"></a>
+                    <a href="#moreThen" class="js-smooth-link ic-arr-dawn second-slider-wrapper__arr-dawn"></a>
                 </div>
             </div>
             <div class="more-then" id="moreThen">
