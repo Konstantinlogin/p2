@@ -1,19 +1,19 @@
 .ic-top-quote {
-    background: url('../images/ic_top_quote.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_top_quote.png') no-repeat center;
     display: inline-block;
     width: 50px;
     height: 50px;
     background-size: contain;
 }
 .ic-bottom-quote {
-    background: url('../images/ic_bottom_quote.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_bottom_quote.png') no-repeat center;
     display: inline-block;
     width: 114px;
     height: 103px;
     background-size: contain;
 }
 .ic-arr-dawn {
-    background: url('../images/ic_arr_down.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_arr_down.png') no-repeat center;
     display: inline-block;
     width: 34px;
     height: 22px;
@@ -21,7 +21,7 @@
     text-decoration: none;
 }
 .ic-fly {
-    background: url('../images/ic_fly.svg') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_fly.svg') no-repeat center;
     display: inline-block;
     width: 154px;
     height: 103px;
@@ -29,7 +29,7 @@
     text-decoration: none;
 } 
 .ic-hammer {
-    background: url('../images/ic_hammer.svg') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_hammer.svg') no-repeat center;
     display: inline-block;
     width: 124px;
     height: 124px;
@@ -37,7 +37,7 @@
     text-decoration: none;
 } 
 .ic-sofa {
-    background: url('../images/ic_sofa.svg') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_sofa.svg') no-repeat center;
     display: inline-block;
     width: 135px;
     height: 124px;
@@ -45,7 +45,7 @@
     text-decoration: none;
 }
 .ic-arr-right {
-    background: url('../images/ic_arr_right.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_arr_right.png') no-repeat center;
     display: inline-block;
     width: 44px;
     height: 69px;
@@ -53,7 +53,7 @@
     text-decoration: none;
 }
 .ic-arr-left {
-    background: url('../images/ic_arr_left.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_arr_left.png') no-repeat center;
     display: inline-block;
     width: 44px;
     height: 69px;
@@ -61,7 +61,7 @@
     text-decoration: none;
 }
 .ic-calculator {
-    background: url('../images/ic_calculator.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_calculator.png') no-repeat center;
     display: inline-block;
     width: 63px;
     height: 79px;
@@ -69,7 +69,7 @@
     text-decoration: none;
 }
 .ic-contact {
-    background: url('../images/ic_contact.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_contact.png') no-repeat center;
     display: inline-block;
     width: 82px;
     height: 60px;
@@ -77,7 +77,7 @@
     text-decoration: none;
 }
 .ic-loop {
-    background: url('../images/ic_loop.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_loop.png') no-repeat center;
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -85,7 +85,7 @@
     text-decoration: none;
 }
 .ic-wallet {
-    background: url('../images/ic_wallet.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_wallet.png') no-repeat center;
     display: inline-block;
     width: 81px;
     height: 93px;
@@ -95,7 +95,7 @@
 // 36 36
 .ic-fb {
     display: inline-block;
-    background-image: url('../images/ic_social_media.png');
+    background-image: url($IMAGES_PATH + 'ic_social_media.png');
     width: 36px;
     height: 36px;
     background-size: 36px;
@@ -106,7 +106,7 @@
 }
 .ic-insta {
     display: inline-block;
-    background-image: url('../images/ic_social_media.png');
+    background-image: url($IMAGES_PATH + 'ic_social_media.png');
     width: 36px;
     height: 36px;
     background-size: 36px;
@@ -117,7 +117,7 @@
 }
 .ic-vk {
     display: inline-block;
-    background-image: url('../images/ic_social_media.png');
+    background-image: url($IMAGES_PATH + 'ic_social_media.png');
     width: 36px;
     height: 36px;
     background-size: 36px;
