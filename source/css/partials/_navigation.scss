@@ -23,6 +23,19 @@
         z-index: 9;
         transition: 0.5s;
     }
+    &__separator {
+        width: 100%;
+        max-width: 155px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 0;
+        border-top: 2px solid $BTC;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        @media screen and (max-width: #{$XS}) {
+            border-top: 1px solid $BTC;
+        }
+    }
 }
 body.mobile-menu-opened {
     height: 100%;
@@ -43,18 +56,33 @@ body.mobile-menu-opened {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 200px;
+    &:first-of-type {
+        margin-top: 200px;
+    }
     @media screen and (max-width: #{$XS}) {
         margin-top: 120px;
     }
     &__item {
         margin-bottom: 38px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &--active {
+            .menu__link {
+                pointer-events: none;
+                font-weight: 700;
+                &:hover {
+                    text-decoration: none;
+                    cursor: default;
+                }
+            }
+        }
     }
     &__link {
         @extend %text;
         color: $PC;
         font-weight: 500;
-        font-size: 38px;
+        font-size: 24px;
         @media screen and (max-width: #{$XS}) {
             font-size: 24px;
         }
