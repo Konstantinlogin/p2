@@ -61,7 +61,7 @@
     text-decoration: none;
 }
 .ic-calculator {
-    background: url($IMAGES_PATH + 'ic_calculator.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_calculator.svg') no-repeat 15px center;
     display: inline-block;
     width: 63px;
     height: 79px;
@@ -69,7 +69,7 @@
     text-decoration: none;
 }
 .ic-contact {
-    background: url($IMAGES_PATH + 'ic_contact.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_contact.svg') no-repeat center;
     display: inline-block;
     width: 82px;
     height: 60px;
@@ -77,7 +77,7 @@
     text-decoration: none;
 }
 .ic-loop {
-    background: url($IMAGES_PATH + 'ic_loop.png') no-repeat center;
+    background: url($IMAGES_PATH + 'ic_loop.svg') no-repeat center;
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -92,39 +92,29 @@
     background-size: contain;
     text-decoration: none;  
 }
-// 36 36
 .ic-fb {
     display: inline-block;
-    background-image: url($IMAGES_PATH + 'ic_social_media.png');
+    background: url($IMAGES_PATH + 'ic_fb.svg') no-repeat center;
     width: 36px;
     height: 36px;
-    background-size: 36px;
     text-decoration: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 1px 0px;
+    background-size: contain;
 }
 .ic-insta {
     display: inline-block;
-    background-image: url($IMAGES_PATH + 'ic_social_media.png');
+    background: url($IMAGES_PATH + 'ic_insta.svg') no-repeat center;
     width: 36px;
     height: 36px;
-    background-size: 36px;
     text-decoration: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -60px 0px;
+    background-size: contain;
 }
 .ic-vk {
     display: inline-block;
-    background-image: url($IMAGES_PATH + 'ic_social_media.png');
+    background: url($IMAGES_PATH + 'ic_vk.svg') no-repeat center;
     width: 36px;
     height: 36px;
-    background-size: 36px;
     text-decoration: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -118px 0px;
+    background-size: contain;
 }
 .ic-second-slider-arr-left {
     background-image: url($IMAGES_PATH + 'ic_second_slider_arr_left.png');
