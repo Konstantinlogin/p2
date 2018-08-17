@@ -126,3 +126,19 @@
     background-size: cover;
     background-position: -118px 0px;
 }
+.ic-second-slider-arr-left {
+    background-image: url($IMAGES_PATH + 'ic_second_slider_arr_left.png');
+    display: inline-block;
+    width: 32px;
+    height: 50px;
+    background-size: contain;
+    text-decoration: none;  
+}
+.ic-second-slider-arr-right {
+    background-image: url($IMAGES_PATH + 'ic_second_slider_arr_right.png');
+    display: inline-block;
+    width: 32px;
+    height: 50px;
+    background-size: contain;
+    text-decoration: none;  
+}

@@ -4,7 +4,7 @@
         max-width: 1920px;
         width: 100%;
         margin: 0 auto;
-        background: url($b64_bg_LG) no-repeat top;
+        // background: url($b64_bg_LG) no-repeat top;
         background-size: 1920px;
 
         @media screen and (max-width: #{$MD}) {

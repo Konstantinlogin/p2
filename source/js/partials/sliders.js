@@ -11,7 +11,11 @@ let secondSlider = new Swiper('.second-slider', {
   pagination: {
     el: '.second-slider-wrapper__pagination',
     clickable: true
-  }
+  },
+  navigation: {
+    nextEl: '.first-section__arr-right',
+    prevEl: '.first-section__arr-left',
+  },
 });
 
 let clientsSlider = new Swiper('.clients-slider', {

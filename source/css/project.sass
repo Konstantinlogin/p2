@@ -1,5 +1,5 @@
 @import partials/_variables
-@import partials/_b64_bg_LG
+// @import partials/_b64_bg_LG
 @import partials/_b64_bg_MD
 @import partials/_b64_bg_office_LG
 @import partials/_b64_head_circle
@@ -16,6 +16,8 @@
 
 @import partials/header
 @import partials/first-section
+@media screen and (min-width: #{$MD + 1})
+    @import partials/_first-section_LG
 @import partials/section-clients
 @import partials/section-how-it-works
 @import partials/section-why
