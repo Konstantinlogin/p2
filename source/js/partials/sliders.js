@@ -16,6 +16,11 @@ let secondSlider = new Swiper('.second-slider', {
     nextEl: '.first-section__arr-right',
     prevEl: '.first-section__arr-left',
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  loop: true
 });
 
 let clientsSlider = new Swiper('.clients-slider', {

@@ -110,11 +110,11 @@
             display: inline-block;
             position: absolute;
             top: calc(100% - 3px);
-            left: 52px;
+            left: 34px;
             width: 0;
             height: 0;
-            border-top: 40px solid white;
-            border-right: 40px solid transparent;
+            border-top: 34px solid white;
+            border-right: 34px solid transparent;
             @media screen and (max-width: #{$XS - 1px}) {
                 border-top: 15px solid white;
                 border-right: 15px solid transparent;
