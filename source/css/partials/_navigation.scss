@@ -58,9 +58,9 @@ body.mobile-menu-opened {
     padding: 0;
     &:first-of-type {
         margin-top: 200px;
-    }
-    @media screen and (max-width: #{$XS}) {
-        margin-top: 120px;
+        @media screen and (max-width: #{$XS}) {
+            margin-top: 120px;
+        }
     }
     &__item {
         margin-bottom: 38px;
