@@ -14,14 +14,19 @@
         position: relative;
         background: url($IMAGES_PATH + 'blue_ovarlay_bg.jpg') no-repeat top;
         background-size: 1920px;
+        min-height: 800px;
         @media screen and (max-width: #{$MD}) {
             background: url($IMAGES_PATH + 'blue_ovarlay_bg.jpg') no-repeat bottom;
             background-size: 1420px;
+        }
+        @media screen and (max-width: #{$MD}) {
+            min-height: auto;
         }
         @media screen and (max-width: #{$XS - 1px}) {
             background: url($IMAGES_PATH + 'blue_ovarlay_bg.jpg') no-repeat top;
             background-size: cover;
             margin-top: 24px;
+
         }
     }
     &__title {
@@ -49,10 +54,87 @@
             min-height: auto;
         }
     }
+    &__small-title {
+        @extend %text;
+        font-weight: 500;
+        font-size: 60px;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        color: white;
+        min-height: 115px;
+        padding-top: 259px;
+        padding-bottom: 66px;
+        transform: translateX(-40px);
+        @media screen and (max-width: #{$SM}) {
+            padding-top: 123px;
+            padding-bottom: 33px;
+            font-weight: 500;
+            font-size: 50px;
+            position: relative;
+            top: 120px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            font-size: 22px;
+            padding-top: 96px;
+            padding-bottom: 48px;
+            min-height: auto;
+            top: 0;
+            transform: translateX(0px);
+        }
+    }
 }
 .comics {
     position: relative;
     width: 100%;
+    &__btn-wrapper {
+        text-align: center;
+        margin-bottom: 36px;
+        @media screen and (max-width: #{$MD}) {
+            margin-bottom: 75px;
+        }
+        @media screen and (max-width: #{$SM}) {
+            margin-bottom: 135px;
+            position: relative;
+            top: 120px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            top: 0;
+            margin-bottom: 0;
+        }
+    }
+    &__btn {
+        @extend %text;
+        box-sizing: border-box;
+        font-weight: 500;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: #223762;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 43px;
+        height: 112px;
+        line-height: 112px;
+        white-space: nowrap;
+        border-radius: 80px;
+        transform: translateX(-28px);
+        @media screen and (max-width: #{$SM}) {
+            height: 80px;
+            line-height: 80px;
+            margin-bottom: 135px;
+            font-size: 30px;
+        }
+        @media screen and (max-width: #{$XS - 1px}) {
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            padding-left: 18px;
+            padding-right: 18px;
+            margin-bottom: 8px;
+            transform: translateX(0px);
+        }
+    }
     &__container {
         box-sizing: border-box;
         padding-left: 10px;
