@@ -1,0 +1,85 @@
+.about-first-section {
+	margin-top: 80px;
+	background: url($IMAGES_PATH + 'bg_Group_6.jpg') no-repeat center;
+	background-size: contain;
+	@media screen and (min-width: 768px) {
+		margin-top: 178px;
+		background: none;
+	}
+	overflow: hidden;
+	&__container {
+		max-width: 1544px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 46px;
+		min-height: 269px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+		background: rgba(255, 255, 255, 0.8);
+		@media screen and (min-width: 768px) {
+			display: flex;
+			align-items: flex-start;
+			padding-top: 100px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			left: -41px;
+			top: 0;
+			display: block;
+			width: 221px;
+			height: 227px;
+			background: url($IMAGES_PATH + 'office.png') no-repeat center;
+			background-size: contain;
+			z-index: 1;
+		}
+	}
+	&__image-wrap {
+		display: none;
+	}
+	&__image {
+		width: 100%;
+		height: auto;
+		position: relative;
+		bottom: 100px;
+	}
+	&__content {
+		@media screen and (min-width: 768px) {
+			padding-left: 20px;
+		}
+	}
+	&__content, &__image-wrap {
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+			width: 50%;
+		}
+	}
+	&__title {
+		position: relative;
+		z-index: 2;
+		@extend %text;
+		font-weight: 900;
+		color: $PC;
+		font-size: 2.5rem;
+		margin-bottom: 25px;
+		@media screen and (min-width: 1200px) {
+			font-size: 65px;
+			margin-bottom: 70px;
+		}
+		line-height: 1.5;
+		margin-top: 0;
+	}
+	&__text {
+		position: relative;
+		z-index: 2;
+		@extend %text;
+		font-weight: 100;
+		color: $PC;
+		font-size: 18px;
+		line-height: 1.5;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}

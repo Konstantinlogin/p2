@@ -52,6 +52,10 @@ let plugins = [
             from: 'source/fonts',
             to: 'fonts'
         },
+        {
+            from: 'source/about.html',
+            to: './'
+        },
     ]),
     new AutoCleanBuildPlugin(),
     new HtmlWebpackPlugin({
