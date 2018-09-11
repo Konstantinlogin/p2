@@ -78,6 +78,19 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
+    &--white {
+        .lk-button__content {
+            color: white;
+        }
+    }
+    &--lg {
+        .lk-button__content {
+            height: 66px;
+            line-height: 66px;
+            font-size: 22px;
+            min-width: 270px;
+        }
+    }
     &:after {
         content: '';
         display: none;

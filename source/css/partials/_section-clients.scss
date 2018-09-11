@@ -208,7 +208,7 @@
         width: calc(100% - 20px);
         height: 138px;
     }
-    background: url('../images/first-service_bg.jpg') no-repeat 0 4px;
+    background: url($IMAGES_PATH + 'first-service_bg.jpg') no-repeat 0 4px;
     background-size: contain;
     &__text {
         @extend %text;

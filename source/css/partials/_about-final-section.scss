@@ -1,0 +1,64 @@
+.about-final-section {
+	position: relative;
+	max-width: 959px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	margin-top: 142px;
+	margin-bottom: 36px;
+	@media screen and (max-width: 960px) {
+		max-width: 479px;
+		margin-top: 82px;
+	}
+	@media screen and (max-width: 768px) {
+		margin-top: 40px;
+	}
+	@media screen and (max-width: 500px) {
+		max-width: 288px;
+	}
+	&__button-block {
+		text-align: center;
+		@media screen and (max-width: 960px) {
+			transform: scale(0.8);
+		}
+		@media screen and (max-width: 767px) {
+			transform: scale(0.7);
+		}
+	}
+}
+.about-first-service {
+	background: url($IMAGES_PATH + 'bg_final.jpg') no-repeat center;
+	background-size: contain;
+	width: 959px;
+	height: 592px;
+	position: relative;
+	&__text {
+		@extend %text;
+		font-weight: 500;
+		font-size: 30px;
+		position: absolute;
+		bottom: 101px;
+		right: 0;
+		text-align: left;
+		width: 437px;
+		height: 160px;
+		line-height: 1.2;
+	}
+}
+@media screen and (max-width: 960px) {
+	.about-first-service {
+		 transform: scale(0.5);
+		 margin-top: -149px;
+		 margin-bottom: -149px;
+		 margin-left: -240px;
+	 }
+}
+
+@media screen and (max-width: 500px) {
+	.about-first-service {
+		transform: scale(0.3);
+		margin-top: -208px;
+		margin-bottom: -208px;
+		margin-left: -335px;
+	}
+}

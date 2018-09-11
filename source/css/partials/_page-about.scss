@@ -1,0 +1,18 @@
+.page-about {
+	.footer {
+		&__container {
+			padding-left: 0;
+			max-width: 1660px;
+		}
+		&__item--social {
+			@media screen and (min-width: 960px){
+				white-space: nowrap;
+				width: 20px;
+			}
+		}
+	}
+}
+
+
+
+
