@@ -18,7 +18,7 @@
 			margin-bottom: 0;
 		}
 		padding: 24px;
-		@media screen and (min-width: 769px) {
+		@media screen and (min-width: 768px) {
 			padding-left: 50px;
 			padding-right: 180px;
 			padding-top: 45px;
@@ -28,25 +28,32 @@
 		border-radius: 12px;
 	}
 	&__download {
-		display: flex;
+		display: block;
+		white-space: nowrap;
 		align-items: center;
 		text-decoration: none;
 		color: $PC;
 		border: none;
-		width: 129px;
+		width: 149px;
 		margin-top: 40px;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 0;
+		text-align: center;
 		@media screen and (min-width: 768px) {
+			text-align: left;
 			position: absolute;
-			right: 50px;
-			top: 50%;
-			transform: translateY(-50%);
+			right: 30px;
+			top: 45px;
 			margin-top: 0;
 		}
 	}
 	&__download-text {
+		position: relative;
+		top: 14px;
 		@extend %text;
+		display: inline-block;
+		vertical-align: top;
 		font-weight: 700;
 		line-height: 1.5;
 		font-size: 16px;
@@ -65,6 +72,16 @@
 	&__download-sprite {
 		width: 44px;
 		display: inline-block;
+	}
+	&__download-filename {
+		display: block;
+		@extend %text;
+		font-size: 12px;
+		font-weight: 500;
+		white-space: normal;
+		color: $PC;
+		line-height: 1.2;
+		margin-top: 4px;
 	}
 
 }
