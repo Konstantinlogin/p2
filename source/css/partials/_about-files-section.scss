@@ -12,13 +12,19 @@
 	&__item {
 		position: relative;
 		box-sizing: border-box;
+		display: block;
 		width: 100%;
 		margin-bottom: 14px;
+		text-align: center;
+		text-decoration: none;
+		border: none;
 		&:last-child {
 			margin-bottom: 0;
 		}
 		padding: 24px;
 		@media screen and (min-width: 768px) {
+			min-height: 111px;
+			text-align: left;
 			padding-left: 50px;
 			padding-right: 180px;
 			padding-top: 45px;
@@ -35,7 +41,7 @@
 		color: $PC;
 		border: none;
 		width: 149px;
-		margin-top: 40px;
+		margin-top: 10px;
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 0;
@@ -44,7 +50,8 @@
 			text-align: left;
 			position: absolute;
 			right: 30px;
-			top: 45px;
+			top: 50%;
+			transform: translateY(-50%);
 			margin-top: 0;
 		}
 	}
